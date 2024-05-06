@@ -13,15 +13,22 @@
 </head>
 <body>
     <div id="app">
+        <header>
+            <div class="header-container">
+                <div class="img-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="">
+                </div>
+            </div>
+        </header>
         <div class="container">
             <div class="card" v-for="album in albumArray" >
                 <div class="card-img">
                     <img :src="album.poster" alt="">
                 </div>
                 <div class="album-info">
-                    <div>{{ album.title }}</div>
-                    <div>{{ album.author }}</div>
-                    <div>{{ album.year }}</div>
+                    <div><strong>{{ album.title }}</strong></div>
+                    <div><small>{{ album.author }}</small></div>
+                    <div><strong>{{ album.year }}</strong></div>
                 </div>
 
             </div>

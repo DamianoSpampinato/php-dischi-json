@@ -13,9 +13,11 @@ createApp({
             this.albumArray = response.data
         
         })
-       }
+       },
+       
     },
     mounted() {
         this.getAlbums()
+        
     }
 }).mount('#app');

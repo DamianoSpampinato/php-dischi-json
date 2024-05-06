@@ -1,26 +1,49 @@
 /* reset */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #1d2d3c;
+}
 img{
     width: 100%;
+}
+header{
+    background-color: #06131f;
+    padding: 5px;
 }
 .container{
     width: 900px;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 25px;
+}
+.header-container{
+    width: 1000px;
+    margin:0 auto;
 
 }
-
+.img-container{
+    width: 40px;
+    background-color: black;
+    
+}
 .card{
     display: flex;
-    width: 20%;
+    width: calc(100% / 3);
     flex-direction: column;
-    gap: 5px;
+    background-color: #112030;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 .card-img{
     width: 100%;
+}
+.album-info > * {
+    margin: 5px 0;
 }
