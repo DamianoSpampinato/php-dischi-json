@@ -19,6 +19,7 @@ img{
     display: flex;
     width: 20%;
     flex-direction: column;
+    gap: 5px;
 }
 .card-img{
     width: 100%;
